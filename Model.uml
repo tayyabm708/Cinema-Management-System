@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_oU14kNgiEe2gffEss6lyTQ" name="Model">
+  <eAnnotations xmi:id="_oU14kdgiEe2gffEss6lyTQ" source="Objing">
+    <contents xmi:type="uml:Property" xmi:id="_oU14ktgiEe2gffEss6lyTQ" name="exporterVersion">
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_oU14k9giEe2gffEss6lyTQ" value="3.0.0"/>
+    </contents>
+  </eAnnotations>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oU14lNgiEe2gffEss6lyTQ" name="Filing">
+    <ownedAttribute xmi:id="_oU14ldgiEe2gffEss6lyTQ" name="foodSeller" visibility="public" type="_oU14sdgiEe2gffEss6lyTQ" isUnique="false" aggregation="composite" association="_oU14odgiEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU14ltgiEe2gffEss6lyTQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU14l9giEe2gffEss6lyTQ" name="administrator" visibility="public" type="_oU14rdgiEe2gffEss6lyTQ" isUnique="false" aggregation="composite" association="_oU14o9giEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU14mNgiEe2gffEss6lyTQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU14mdgiEe2gffEss6lyTQ" name="ticketSeller" visibility="public" type="_oU14uNgiEe2gffEss6lyTQ" isUnique="false" aggregation="composite" association="_oU14pdgiEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU14mtgiEe2gffEss6lyTQ"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_oU14m9giEe2gffEss6lyTQ" name="WriteToFile" visibility="public"/>
+    <ownedOperation xmi:id="_oU14nNgiEe2gffEss6lyTQ" name="NumberOf" visibility="public"/>
+    <ownedOperation xmi:id="_oU14ndgiEe2gffEss6lyTQ" name="deleteFromFile" visibility="public"/>
+    <ownedOperation xmi:id="_oU14ntgiEe2gffEss6lyTQ" name="UpdateFromFile" visibility="public"/>
+    <ownedOperation xmi:id="_oU14n9giEe2gffEss6lyTQ" name="SearchFromFile" visibility="public"/>
+    <ownedOperation xmi:id="_oU14oNgiEe2gffEss6lyTQ" name="DisplayFromFile" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oU14odgiEe2gffEss6lyTQ" memberEnd="_oU14ldgiEe2gffEss6lyTQ _oU14otgiEe2gffEss6lyTQ">
+    <ownedEnd xmi:id="_oU14otgiEe2gffEss6lyTQ" visibility="public" type="_oU14lNgiEe2gffEss6lyTQ" isUnique="false" association="_oU14odgiEe2gffEss6lyTQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oU14o9giEe2gffEss6lyTQ" memberEnd="_oU14l9giEe2gffEss6lyTQ _oU14pNgiEe2gffEss6lyTQ">
+    <ownedEnd xmi:id="_oU14pNgiEe2gffEss6lyTQ" visibility="public" type="_oU14lNgiEe2gffEss6lyTQ" isUnique="false" association="_oU14o9giEe2gffEss6lyTQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oU14pdgiEe2gffEss6lyTQ" memberEnd="_oU14mdgiEe2gffEss6lyTQ _oU14ptgiEe2gffEss6lyTQ">
+    <ownedEnd xmi:id="_oU14ptgiEe2gffEss6lyTQ" visibility="public" type="_oU14lNgiEe2gffEss6lyTQ" isUnique="false" association="_oU14pdgiEe2gffEss6lyTQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oU14p9giEe2gffEss6lyTQ" name="Register">
+    <ownedAttribute xmi:id="_oU14qNgiEe2gffEss6lyTQ" name="administrator" visibility="public" type="_oU14rdgiEe2gffEss6lyTQ" isUnique="false" aggregation="composite" association="_oU14q9giEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU14qdgiEe2gffEss6lyTQ"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_oU14qtgiEe2gffEss6lyTQ" name="Register" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oU14q9giEe2gffEss6lyTQ" memberEnd="_oU14qNgiEe2gffEss6lyTQ _oU14rNgiEe2gffEss6lyTQ">
+    <ownedEnd xmi:id="_oU14rNgiEe2gffEss6lyTQ" visibility="public" type="_oU14p9giEe2gffEss6lyTQ" isUnique="false" association="_oU14q9giEe2gffEss6lyTQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oU14rdgiEe2gffEss6lyTQ" name="Administrator">
+    <ownedAttribute xmi:id="_oU14rtgiEe2gffEss6lyTQ" name="Password" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU14r9giEe2gffEss6lyTQ" name="Username" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_oU14sNgiEe2gffEss6lyTQ" name="Operation" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oU14sdgiEe2gffEss6lyTQ" name="FoodSeller">
+    <ownedAttribute xmi:id="_oU14stgiEe2gffEss6lyTQ" name="employee" visibility="public" type="_oU14v9giEe2gffEss6lyTQ" isUnique="false" association="_oU14tdgiEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU14s9giEe2gffEss6lyTQ"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_oU14tNgiEe2gffEss6lyTQ" name="Foodseller" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oU14tdgiEe2gffEss6lyTQ" memberEnd="_oU14stgiEe2gffEss6lyTQ _oU14ttgiEe2gffEss6lyTQ">
+    <ownedEnd xmi:id="_oU14ttgiEe2gffEss6lyTQ" visibility="public" type="_oU14sdgiEe2gffEss6lyTQ" isUnique="false" association="_oU14tdgiEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU14t9giEe2gffEss6lyTQ"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oU14uNgiEe2gffEss6lyTQ" name="TicketSeller">
+    <ownedAttribute xmi:id="_oU14udgiEe2gffEss6lyTQ" name="employee" visibility="public" type="_oU14v9giEe2gffEss6lyTQ" isUnique="false" association="_oU14vNgiEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU14utgiEe2gffEss6lyTQ"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_oU14u9giEe2gffEss6lyTQ" name="TicketSeller" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oU14vNgiEe2gffEss6lyTQ" memberEnd="_oU14udgiEe2gffEss6lyTQ _oU14vdgiEe2gffEss6lyTQ">
+    <ownedEnd xmi:id="_oU14vdgiEe2gffEss6lyTQ" visibility="public" type="_oU14uNgiEe2gffEss6lyTQ" isUnique="false" association="_oU14vNgiEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU14vtgiEe2gffEss6lyTQ"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oU14v9giEe2gffEss6lyTQ" name="Employee">
+    <ownedAttribute xmi:id="_oU14wNgiEe2gffEss6lyTQ" name="user" visibility="public" type="_oU15BdgiEe2gffEss6lyTQ" isUnique="false" association="_oU14z9giEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU14wdgiEe2gffEss6lyTQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU14wtgiEe2gffEss6lyTQ" name="person" visibility="public" type="_oU15AtgiEe2gffEss6lyTQ" isUnique="false" association="_oU140tgiEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU14w9giEe2gffEss6lyTQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU14xNgiEe2gffEss6lyTQ" name="date" visibility="public" type="_oU15CtgiEe2gffEss6lyTQ" isUnique="false" aggregation="composite" association="_oU141dgiEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU14xdgiEe2gffEss6lyTQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU14xtgiEe2gffEss6lyTQ" name="address" visibility="public" type="_oU15D9giEe2gffEss6lyTQ" isUnique="false" aggregation="composite" association="_oU1419giEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU14x9giEe2gffEss6lyTQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU14yNgiEe2gffEss6lyTQ" name="Password" visibility="private" isUnique="false">
+      <ownedComment xmi:id="_oU14ydgiEe2gffEss6lyTQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU14ytgiEe2gffEss6lyTQ" name="Username" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU14y9giEe2gffEss6lyTQ" name="Address" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU14zNgiEe2gffEss6lyTQ" name="HireDate" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU14zdgiEe2gffEss6lyTQ" name="birthDate" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_oU14ztgiEe2gffEss6lyTQ" name="Experienced" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oU14z9giEe2gffEss6lyTQ" memberEnd="_oU14wNgiEe2gffEss6lyTQ _oU140NgiEe2gffEss6lyTQ">
+    <ownedEnd xmi:id="_oU140NgiEe2gffEss6lyTQ" visibility="public" type="_oU14v9giEe2gffEss6lyTQ" isUnique="false" association="_oU14z9giEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU140dgiEe2gffEss6lyTQ"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oU140tgiEe2gffEss6lyTQ" memberEnd="_oU14wtgiEe2gffEss6lyTQ _oU1409giEe2gffEss6lyTQ">
+    <ownedEnd xmi:id="_oU1409giEe2gffEss6lyTQ" visibility="public" type="_oU14v9giEe2gffEss6lyTQ" isUnique="false" association="_oU140tgiEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU141NgiEe2gffEss6lyTQ"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oU141dgiEe2gffEss6lyTQ" memberEnd="_oU14xNgiEe2gffEss6lyTQ _oU141tgiEe2gffEss6lyTQ">
+    <ownedEnd xmi:id="_oU141tgiEe2gffEss6lyTQ" visibility="public" type="_oU14v9giEe2gffEss6lyTQ" isUnique="false" association="_oU141dgiEe2gffEss6lyTQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oU1419giEe2gffEss6lyTQ" memberEnd="_oU14xtgiEe2gffEss6lyTQ _oU142NgiEe2gffEss6lyTQ">
+    <ownedEnd xmi:id="_oU142NgiEe2gffEss6lyTQ" visibility="public" type="_oU14v9giEe2gffEss6lyTQ" isUnique="false" association="_oU1419giEe2gffEss6lyTQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oU142dgiEe2gffEss6lyTQ" name="UpdateMovie">
+    <ownedAttribute xmi:id="_oU142tgiEe2gffEss6lyTQ" name="administrator" visibility="public" type="_oU14rdgiEe2gffEss6lyTQ" isUnique="false" association="_oU144dgiEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU1429giEe2gffEss6lyTQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU143NgiEe2gffEss6lyTQ" name="Movie" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU143dgiEe2gffEss6lyTQ" name="Admin" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU143tgiEe2gffEss6lyTQ" name="Seller" visibility="public" isUnique="false">
+      <ownedComment xmi:id="_oU1439giEe2gffEss6lyTQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_oU144NgiEe2gffEss6lyTQ" name="UpdateMovie" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oU144dgiEe2gffEss6lyTQ" memberEnd="_oU142tgiEe2gffEss6lyTQ _oU144tgiEe2gffEss6lyTQ">
+    <ownedEnd xmi:id="_oU144tgiEe2gffEss6lyTQ" visibility="public" type="_oU142dgiEe2gffEss6lyTQ" isUnique="false" association="_oU144dgiEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU1449giEe2gffEss6lyTQ"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oU145NgiEe2gffEss6lyTQ" name="AddMovie">
+    <ownedAttribute xmi:id="_oU145dgiEe2gffEss6lyTQ" name="administrator" visibility="public" type="_oU14rdgiEe2gffEss6lyTQ" isUnique="false" association="_oU1469giEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU145tgiEe2gffEss6lyTQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU1459giEe2gffEss6lyTQ" name="Movie" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU146NgiEe2gffEss6lyTQ" name="Admin" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU146dgiEe2gffEss6lyTQ" name="Seller" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_oU146tgiEe2gffEss6lyTQ" name="AddMovie" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oU1469giEe2gffEss6lyTQ" memberEnd="_oU145dgiEe2gffEss6lyTQ _oU147NgiEe2gffEss6lyTQ">
+    <ownedEnd xmi:id="_oU147NgiEe2gffEss6lyTQ" visibility="public" type="_oU145NgiEe2gffEss6lyTQ" isUnique="false" association="_oU1469giEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU147dgiEe2gffEss6lyTQ"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oU147tgiEe2gffEss6lyTQ" name="UpdateFood">
+    <ownedAttribute xmi:id="_oU1479giEe2gffEss6lyTQ" name="administrator" visibility="public" type="_oU14rdgiEe2gffEss6lyTQ" isUnique="false" association="_oU149dgiEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU148NgiEe2gffEss6lyTQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU148dgiEe2gffEss6lyTQ" name="Food" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU148tgiEe2gffEss6lyTQ" name="Admin" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU1489giEe2gffEss6lyTQ" name="Seller" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_oU149NgiEe2gffEss6lyTQ" name="Operation" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oU149dgiEe2gffEss6lyTQ" memberEnd="_oU1479giEe2gffEss6lyTQ _oU149tgiEe2gffEss6lyTQ">
+    <ownedEnd xmi:id="_oU149tgiEe2gffEss6lyTQ" visibility="public" type="_oU147tgiEe2gffEss6lyTQ" isUnique="false" association="_oU149dgiEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU1499giEe2gffEss6lyTQ"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oU14-NgiEe2gffEss6lyTQ" name="AddFood">
+    <ownedAttribute xmi:id="_oU14-dgiEe2gffEss6lyTQ" name="administrator" visibility="public" type="_oU14rdgiEe2gffEss6lyTQ" isUnique="false" association="_oU14_9giEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU14-tgiEe2gffEss6lyTQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU14-9giEe2gffEss6lyTQ" name="Food" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU14_NgiEe2gffEss6lyTQ" name="Admin" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU14_dgiEe2gffEss6lyTQ" name="seller" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_oU14_tgiEe2gffEss6lyTQ" name="Operation" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oU14_9giEe2gffEss6lyTQ" memberEnd="_oU14-dgiEe2gffEss6lyTQ _oU15ANgiEe2gffEss6lyTQ">
+    <ownedEnd xmi:id="_oU15ANgiEe2gffEss6lyTQ" visibility="public" type="_oU14-NgiEe2gffEss6lyTQ" isUnique="false" association="_oU14_9giEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU15AdgiEe2gffEss6lyTQ"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oU15AtgiEe2gffEss6lyTQ" name="Person">
+    <ownedAttribute xmi:id="_oU15A9giEe2gffEss6lyTQ" name="LastName" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU15BNgiEe2gffEss6lyTQ" name="firstName" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oU15BdgiEe2gffEss6lyTQ" name="User">
+    <ownedAttribute xmi:id="_oU15BtgiEe2gffEss6lyTQ" name="login" visibility="public" type="_oU15FNgiEe2gffEss6lyTQ" isUnique="false" aggregation="composite" association="_oU15CNgiEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU15B9giEe2gffEss6lyTQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oU15CNgiEe2gffEss6lyTQ" memberEnd="_oU15BtgiEe2gffEss6lyTQ _oU15CdgiEe2gffEss6lyTQ">
+    <ownedEnd xmi:id="_oU15CdgiEe2gffEss6lyTQ" visibility="public" type="_oU15BdgiEe2gffEss6lyTQ" isUnique="false" association="_oU15CNgiEe2gffEss6lyTQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oU15CtgiEe2gffEss6lyTQ" name="Date">
+    <ownedAttribute xmi:id="_oU15C9giEe2gffEss6lyTQ" name="year" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU15DNgiEe2gffEss6lyTQ" name="month" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU15DdgiEe2gffEss6lyTQ" name="year" visibility="private" isUnique="false">
+      <ownedComment xmi:id="_oU15DtgiEe2gffEss6lyTQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oU15D9giEe2gffEss6lyTQ" name="Address">
+    <ownedComment xmi:id="_oU15ENgiEe2gffEss6lyTQ">
+      <body>&lt;Enter note text here></body>
+    </ownedComment>
+    <ownedAttribute xmi:id="_oU15EdgiEe2gffEss6lyTQ" name="city" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU15EtgiEe2gffEss6lyTQ" name="street" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU15E9giEe2gffEss6lyTQ" name="house" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oU15FNgiEe2gffEss6lyTQ" name="Login"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oU15FdgiEe2gffEss6lyTQ" name="ArrayListFiling">
+    <ownedAttribute xmi:id="_oU15FtgiEe2gffEss6lyTQ" name="movieItem" visibility="public" type="_oU15KtgiEe2gffEss6lyTQ" isUnique="false" aggregation="composite" association="_oU15H9giEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU15F9giEe2gffEss6lyTQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU15GNgiEe2gffEss6lyTQ" name="foodItem" visibility="public" type="_oU15MtgiEe2gffEss6lyTQ" isUnique="false" aggregation="composite" association="_oU15IdgiEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU15GdgiEe2gffEss6lyTQ"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_oU15GtgiEe2gffEss6lyTQ" name="WriteToFile" visibility="public"/>
+    <ownedOperation xmi:id="_oU15G9giEe2gffEss6lyTQ" name="ReadFromFile" visibility="public"/>
+    <ownedOperation xmi:id="_oU15HNgiEe2gffEss6lyTQ" name="saveChanges" visibility="public"/>
+    <ownedOperation xmi:id="_oU15HdgiEe2gffEss6lyTQ" name="delete" visibility="public"/>
+    <ownedOperation xmi:id="_oU15HtgiEe2gffEss6lyTQ" name="DisplayArray" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oU15H9giEe2gffEss6lyTQ" memberEnd="_oU15FtgiEe2gffEss6lyTQ _oU15INgiEe2gffEss6lyTQ">
+    <ownedEnd xmi:id="_oU15INgiEe2gffEss6lyTQ" visibility="public" type="_oU15FdgiEe2gffEss6lyTQ" isUnique="false" association="_oU15H9giEe2gffEss6lyTQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oU15IdgiEe2gffEss6lyTQ" memberEnd="_oU15GNgiEe2gffEss6lyTQ _oU15ItgiEe2gffEss6lyTQ">
+    <ownedEnd xmi:id="_oU15ItgiEe2gffEss6lyTQ" visibility="public" type="_oU15FdgiEe2gffEss6lyTQ" isUnique="false" association="_oU15IdgiEe2gffEss6lyTQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oU15I9giEe2gffEss6lyTQ" name="MovieList">
+    <ownedAttribute xmi:id="_oU15JNgiEe2gffEss6lyTQ" name="movieItem" visibility="public" type="_oU15KtgiEe2gffEss6lyTQ" isUnique="false" aggregation="composite" association="_oU15KNgiEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU15JdgiEe2gffEss6lyTQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU15JtgiEe2gffEss6lyTQ" name="Movie" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_oU15J9giEe2gffEss6lyTQ" name="MovieList" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oU15KNgiEe2gffEss6lyTQ" memberEnd="_oU15JNgiEe2gffEss6lyTQ _oU15KdgiEe2gffEss6lyTQ">
+    <ownedEnd xmi:id="_oU15KdgiEe2gffEss6lyTQ" visibility="public" type="_oU15I9giEe2gffEss6lyTQ" isUnique="false" association="_oU15KNgiEe2gffEss6lyTQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oU15KtgiEe2gffEss6lyTQ" name="MovieItem">
+    <ownedAttribute xmi:id="_oU15K9giEe2gffEss6lyTQ" name="path" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU15LNgiEe2gffEss6lyTQ" name="rating" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU15LdgiEe2gffEss6lyTQ" name="executiveTicket" visibility="private" isUnique="false">
+      <ownedComment xmi:id="_oU15LtgiEe2gffEss6lyTQ">
+        <body>&lt;Enter note text here></body>
+      </ownedComment>
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU15L9giEe2gffEss6lyTQ" name="standardTicket" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU15MNgiEe2gffEss6lyTQ" name="genre" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU15MdgiEe2gffEss6lyTQ" name="name" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oU15MtgiEe2gffEss6lyTQ" name="FoodItem">
+    <ownedAttribute xmi:id="_oU15M9giEe2gffEss6lyTQ" name="pathname" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU15NNgiEe2gffEss6lyTQ" name="Iprice" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU15NdgiEe2gffEss6lyTQ" name="mPrice" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU15NtgiEe2gffEss6lyTQ" name="sPrice" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU15N9giEe2gffEss6lyTQ" name="name" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oU15ONgiEe2gffEss6lyTQ" name="Invoice">
+    <ownedAttribute xmi:id="_oU15OdgiEe2gffEss6lyTQ" name="movieItem" visibility="public" type="_oU15KtgiEe2gffEss6lyTQ" isUnique="false" aggregation="composite" association="_oU15O9giEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU15OtgiEe2gffEss6lyTQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oU15O9giEe2gffEss6lyTQ" memberEnd="_oU15OdgiEe2gffEss6lyTQ _oU15PNgiEe2gffEss6lyTQ">
+    <ownedEnd xmi:id="_oU15PNgiEe2gffEss6lyTQ" visibility="public" type="_oU15ONgiEe2gffEss6lyTQ" isUnique="false" association="_oU15O9giEe2gffEss6lyTQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oU15PdgiEe2gffEss6lyTQ" name="InvoiceFood">
+    <ownedAttribute xmi:id="_oU15PtgiEe2gffEss6lyTQ" name="foodItem" visibility="public" type="_oU15MtgiEe2gffEss6lyTQ" isUnique="false" aggregation="composite" association="_oU15QNgiEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU15P9giEe2gffEss6lyTQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oU15QNgiEe2gffEss6lyTQ" memberEnd="_oU15PtgiEe2gffEss6lyTQ _oU15QdgiEe2gffEss6lyTQ">
+    <ownedEnd xmi:id="_oU15QdgiEe2gffEss6lyTQ" visibility="public" type="_oU15PdgiEe2gffEss6lyTQ" isUnique="false" association="_oU15QNgiEe2gffEss6lyTQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_oU15QtgiEe2gffEss6lyTQ" name="FoodList">
+    <ownedAttribute xmi:id="_oU15Q9giEe2gffEss6lyTQ" name="foodItem" visibility="public" type="_oU15MtgiEe2gffEss6lyTQ" isUnique="false" aggregation="composite" association="_oU15R9giEe2gffEss6lyTQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oU15RNgiEe2gffEss6lyTQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_oU15RdgiEe2gffEss6lyTQ" name="Food" visibility="public" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_oU15RtgiEe2gffEss6lyTQ" name="FoodList" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_oU15R9giEe2gffEss6lyTQ" memberEnd="_oU15Q9giEe2gffEss6lyTQ _oU15SNgiEe2gffEss6lyTQ">
+    <ownedEnd xmi:id="_oU15SNgiEe2gffEss6lyTQ" visibility="public" type="_oU15QtgiEe2gffEss6lyTQ" isUnique="false" association="_oU15R9giEe2gffEss6lyTQ"/>
+  </packagedElement>
+</uml:Model>
